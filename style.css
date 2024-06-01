@@ -1,0 +1,452 @@
+@font-face {
+  font-family: juice;
+  src: url(./Rejouice-Headline-4ff9b9bbd7857ecb27f4ae48631d77f5.woff2);
+}
+@font-face {
+  font-family: jute;
+  src: url(./Rejouice-Text-b295c498fd79b8d98fcb605c0d521ba3.woff2);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+
+}
+html,body{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+ 
+  
+}
+#main{
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+ background-color: #F4EDE6;
+ }
+#nav{
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+
+  
+}
+#right{
+ 
+display: flex;
+height: 10vh;
+position: relative;
+
+
+
+
+width: 50vw;
+
+align-items: flex-end;justify-content: flex-end;
+}
+#left{
+
+  height: 10vh;
+  width: 50vw;
+}
+.manas{
+  
+height: 80%;
+position: relative;
+right: 10%;
+top: 25%;
+z-index: 999999999999999999999999999999999999;
+
+}
+#circle{
+  position: relative;
+  left: -1.5%;
+  z-index: initial;
+  top: 31%;
+}
+
+#log{
+  position: relative;
+ left: 1.7%;
+  top: 55%;
+  z-index: 99999999999;
+  font-size: 2vw;
+}
+#logo svg{
+  z-index: 99999999999999999999999999999999999999999999999999999999999;
+}
+#logo{
+ z-index: 99999999999999999999999999999999999999999999999999999999;
+
+  display: flex;
+padding-top: 40px;
+padding-left: 12px;
+  width: 9vw;
+
+  
+
+}
+path:hover{
+  animation: man 2s ease-in-out forwards;
+}
+#nav h5{
+  font-family: juice;
+  font-size: 4.5vh;
+  position: absolute;
+  top: 0%;
+  z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+
+  margin-top: 40px;
+left: 10%;
+
+  font-weight: 600;
+  color: rgba(137, 43, 226, 0.715);
+}
+
+#logo{
+  transition: all 0.3s ease-in-out;
+  }
+  
+  
+  #logo:hover {
+  animation: draw 2s ease-in-out forwards;
+  stroke: red;
+  cursor: pointer;
+  }
+  
+  @keyframes draw {
+  from {
+    stroke-dasharray: 0;
+  
+  }
+  to {
+    stroke-dasharray: 100%;
+  }
+  }
+  
+  @keyframes man {
+    from{
+      top: 40px;
+    }
+    to{
+      top: 20px;
+    }
+  }
+
+
+ 
+  #right{
+    cursor: pointer;
+  }
+  
+  .text{
+    font-size: 2.5vh;
+    font-family: juice;
+    color: black;
+    font-weight: 100;
+  position: relative;
+  
+  }
+ #right  svg rect {
+    stroke-dasharray: 0;
+
+    stroke-dashoffset: 100;
+    transition: all 3s ease;
+  }
+  
+  #right svg:hover rect {
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    stroke-width: 2;
+
+  }
+  
+  #right svg rect {
+    animation: underline 5s forwards;
+  }
+  
+ 
+  
+  
+
+  @keyframes underline {
+    0% {
+      stroke-width: 0;
+      stroke-dashoffset: 100;
+    }
+    100% {
+      stroke-width: 2;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes throb {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .manas {
+    
+    animation: throb 2s ease-in-out infinite;
+  }
+  
+  #circle:hover{
+    cursor: pointer;
+  
+  stroke-width: 2;
+ margin-bottom: 7px;
+ transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+  }
+  
+ 
+ #video{
+  z-index: -9999999999999999999999999999999999999999999999999999999;
+ }
+ #video1{
+ height: 45vw;
+ width: 60vw;
+ position: absolute;
+border-radius: 40vw;
+transform: rotate(360deg);
+left: 35%;
+  object-fit: cover;
+  filter: blur(100px);
+  will-change: transform;
+         transform-origin: center;
+  margin: -10px;
+display: inline;
+top: 0%;
+align-items: center;
+justify-content: center;
+ }
+
+ #video2{
+  height: 45vw;
+  width: 60vw;
+  top: 0%;
+  position: absolute;
+ border-radius: 40vw;
+   object-fit: cover;
+   left: 35%;
+   margin: -10px;
+   filter: blur(100px);
+   will-change: transform;
+         transform-origin: center;
+ display: inline;
+ align-items: center;
+ justify-content: center;
+ transform: rotate(360deg);
+  }
+ 
+  #video3{
+    height: 45vw;
+    width: 60vw;
+    position: absolute;
+    filter: blur(100px);
+   border-radius: 40vw;
+     object-fit: cover;
+     margin: -10px;
+   display: inline;
+   will-change: transform;
+         transform-origin: center;
+   top: 0%;
+   left: 35%;
+   align-items: center;
+   transform: rotate(360deg);
+   justify-content: center;
+    }
+   
+    #video4{
+      height: 45vw;
+      width: 60vw;
+   
+      top: 0%;
+      position: absolute;
+     border-radius: 40vw;
+       object-fit: cover;
+       margin: -10px;
+     display: inline;
+     align-items: center;
+     will-change: transform;
+     filter: blur(100px);
+         transform-origin: center;
+     justify-content: center;
+     transform: rotate(360deg);
+     left: 35%;
+      }
+
+      #video5{
+        height:45vw;
+        width: 60vw;
+        top: 0%;
+        left: 35%;
+        will-change: transform;
+         transform-origin: center;
+        position: absolute;
+       border-radius: 40vw;
+         object-fit: cover;
+         margin: -10px;
+         will-change: transform;
+         transform-origin: center;
+       display: inline;
+       align-items: center;
+       justify-content: center;
+       -webkit-filter: blur(40px);
+       transform: rotate(360deg);
+       filter: blur(100px);
+        }
+       
+        #state p{
+          font-family: juice;
+          font-size: 12vw;
+          top: 45%;
+          width: 42%;
+          
+          color: white;
+          z-index: 99999999999999999999999999999999999999999999999999999999999;
+          line-height: 10vw;
+         position: absolute;
+         left: 50%;
+         transform: translate(-50%,-50%);
+        }
+        
+        #vid{
+          height: 15%;
+          position: absolute;
+left: 65%;
+top: 27%;
+z-index: 999999999999999999999999999999999999;
+transform: translate(-50%,-50%);
+          width: 10%;
+        }
+        #play{
+
+          font-size: 30px;
+color: white;
+
+
+          position: absolute;
+          top: 29%;
+          z-index: 999999999999999999;
+          left: 65%;
+    
+          transform: translate(-50%,-50%);
+                  }
+                 
+                  #mute{
+
+                    font-size: 30px;
+          color: black;
+          
+          
+                    position: absolute;
+                    top: 35%;
+                    z-index: 999999999999999999;
+                    left: 50%;
+              
+                    transform: translate(-50%,-50%);
+                            }
+                            span{
+                              text-shadow: 1px 1px 1px black;
+                              display: inline-block;
+                            }
+                            #ender{
+                              font-size: 2vw;
+                              font-family: juice;
+                              color: white;
+                              position: relative;
+                              top: 80%;
+                              left: 30%;
+                              text-shadow: .5px .5px .5px black;
+
+                            }
+
+                            .Hero {
+                              align-items: center;
+                              border-radius: 6vh;
+                              display: flex;
+                              height: 6vh;
+                              justify-content: center;
+                              position: relative;
+                              width: 6vh;
+                          }
+
+ #download{
+text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 89%;
+  left: 68%;
+  cursor: pointer;
+ }
+
+
+
+ @keyframes load {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.load {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 87.5%;
+  left: 67.7%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
+.load i {
+  font-size: 20px;
+  color: #fff;
+
+  margin-right: 10px;
+  animation: load 1s infinite;
+}
+#mans{
+  height: 100vh;
+  width: 100vw;
+}
+#state video{
+overflow: scroll;
+  position: fixed;
+}
+@media (max-width: 500px) {
+
+  #logo{
+    width: 47vw;
+  }
+  #nav h5{
+    
+      font-family: juice;
+      font-size: 3vh;
+      background-color: blueviolet;
+      
+      z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    
+     
+     
+     
+    
+      font-weight: 600;
+      color: rgba(137, 43, 226, 0.715);
+    }
+  
+}
